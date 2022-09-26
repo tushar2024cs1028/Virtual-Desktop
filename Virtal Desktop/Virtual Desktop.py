@@ -14,7 +14,7 @@ voices= engine.getProperty('voices') #getting details of current voice
 #print(voices[1].id)
 engine.setProperty('voice', voices[1].id)
 
-def sendEmail(to, content):
+def sendEmail(to, content):     #to send email 
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
